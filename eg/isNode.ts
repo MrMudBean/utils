@@ -1,4 +1,4 @@
-import { isUndefined } from 'a-type-of-js';
+import { isUndefined } from '@mudbean/is';
 import { dev } from '@qqi/dev';
 
 dev.skip('测试是否是 node 环境', it => {

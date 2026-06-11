@@ -1,14 +1,14 @@
-import { isArray, isEmptyArray } from 'a-type-of-js';
+import { isArray, isEmptyArray } from '@mudbean/is';
 
 /**
- * ## 两个数组的交集
+ * # 两个数组的交集
  *
  * @param a 数组 1️⃣
  * @param b 数组 2️⃣
  * @returns 返回两个数组的交集
  * @example
  * ```ts
- * import { intersection } from 'a-js-tools';
+ * import { intersection } from '@mudbean/utils';
  *
  * const log = console.log;
  *

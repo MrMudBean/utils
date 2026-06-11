@@ -5,7 +5,7 @@ import { symmetricDifference } from './symmetricDifference';
 
 export { union, intersection, difference, symmetricDifference };
 /**
- * ## 数组的一些方法
+ * # 数组的一些方法
  *
  * - `union` 两个数组的并集（排除共有项）
  * - `intersection` 两个数组的交集（共有项）
@@ -14,14 +14,14 @@ export { union, intersection, difference, symmetricDifference };
  */
 export const enArr = {
   /**
-   * ### 数组的并集
+   * ## 数组的并集
    *  <span style="color:#f36;">请注意，参数有不为数组时直接抛出 TypeError</span>
    * @param arrays  - 多个数组
    * @returns 联合后的数组
    * @example
    *
    * ```ts
-   * import { union } from 'a-js-tools';
+   * import { union } from '@mudbean/utils';
    *
    * const log = console.log;
    *
@@ -51,14 +51,14 @@ export const enArr = {
    */
   union,
   /**
-   * ### 两个数组的交集
+   * ## 两个数组的交集
    *
    * @param a 数组 1️⃣
    * @param b 数组 2️⃣
    * @returns 返回两个数组的交集
    * @example
    * ```ts
-   * import { intersection } from 'a-js-tools';
+   * import { intersection } from '@mudbean/utils';
    *
    * const log = console.log;
    *
@@ -68,7 +68,7 @@ export const enArr = {
    */
   intersection,
   /**
-   * ### 求给出的两个数组的差值（A - B）
+   * ## 求给出的两个数组的差值（A - B）
    *
    * @param a  - 第一个数组
    * @param b - 第二个数组
@@ -77,7 +77,7 @@ export const enArr = {
    * @returns 返回第一个参数相对第二个参数的差值
    * @example
    * ```ts
-   * import { difference} from 'a-js-tools';
+   * import { difference} from '@mudbean/utils';
    *
    * const log = console.log;
    *
@@ -98,14 +98,14 @@ export const enArr = {
   difference,
 
   /**
-   * ### 对称差集 （ A △ B）
+   * ## 对称差集 （ A △ B）
    *
    * @param a  - 数组 a
    * @param b  - 数组 b
    * @returns - 返回一个全新的数组
    * @example
    * ```ts
-   * import { symmetricDifference } from 'a-js-tools';
+   * import { symmetricDifference } from '@mudbean/utils';
    *
    * const log = console.log;
    *

@@ -44,6 +44,7 @@ export default [
       globals: {
         ...globals.browser, // 浏览器全局变量
         ...globals.node, // Node.js 全局变量
+        NodeJS: 'readonly',
       },
     },
   },
@@ -173,17 +174,6 @@ export default [
           },
         },
       ],
-      // settings: {
-      //   jsdoc: {
-      //   // 用于配置首选项别名设置一个 JSDoc 标签
-      //     tagNamePreference: {
-      //       // eg.
-      //       // "param": "arg",
-      //       // "returns": "return",
-      //       // todo: false, // 禁用 todo
-      //       // todo: "禁用原因", // 禁用 todo ，并展示友好原因
-      //     },
-      //   },
     },
   },
 

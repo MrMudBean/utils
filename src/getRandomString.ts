@@ -1,11 +1,11 @@
 /**
  * 获取随机字符串
  */
-import { isNaN, isNumber, isPlainObject, isUndefined } from 'a-type-of-js';
+import { isNaN, isNumber, isPlainObject, isUndefined } from '@mudbean/is';
 import { ObjectAssign } from './object/createConstructor';
 import { getRandomInt } from './getRandomNumber';
 /**
- *  随机字符串生成器
+ * # 随机字符串生成器
  */
 export type RandomStringOptions = {
   /**
@@ -48,17 +48,33 @@ export type RandomStringOptions = {
 };
 
 /**
- * 获取简单的随机字符串
+ * # 获取简单的随机字符串
+ *
+ * ```ts
+ * type RandomStringOptions = {
+ *     length?: number; // 字符串长度
+ *     chars?: string;  // 包含英文字符
+ *     includeNumbers?: boolean; // 包含数字
+ *     includeUppercaseLetters?: boolean; // 包含大写字符
+ *     includeSpecial?: boolean; // 包含特殊字符
+ *     type?: 'string' | 'uuid'; // 生成类型
+ * }
+ * ```
  *
  * @param  options - 字符串生成参数
  * @returns  - 随机字符串
  * @example
  * ```ts
- * import { getRandomString } from 'a-js-tools';
+ * import { getRandomString } from '@mudbean/utils';
  *
  * // 获取简单的随机字符串
  * // 'abcdefg'
- * // getRandomString(7);
+ * getRandomString(7);
+ *
+ * // 获取随机的字符串
+ * getRandomString({
+ *    length: 7,
+ * })
  * ```
  */
 export function getRandomString(
@@ -144,7 +160,7 @@ export function getRandomString(
   }
 
   /**
-   * ## 字符串交叉函数
+   * # 字符串交叉函数
    *
    * 非线形串交叉，对相交叉
    *
@@ -152,6 +168,7 @@ export function getRandomString(
    * @param  str2 - 字符串2
    * @returns - 交叉后的字符串
    * @example
+   *
    * ```ts
    * interleaveString('abc', '123') // 'a1b2c3'
    * ```

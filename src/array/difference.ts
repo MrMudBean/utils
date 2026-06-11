@@ -1,4 +1,4 @@
-import { isArray, isEmptyArray } from 'a-type-of-js';
+import { isArray, isEmptyArray } from '@mudbean/is';
 
 /**
  *  ## 求给出的两个数组的差值（A - B）
@@ -10,7 +10,7 @@ import { isArray, isEmptyArray } from 'a-type-of-js';
  * @returns 返回第一个参数相对第二个参数的差值
  * @example
  * ```ts
- * import { difference} from 'a-js-tools';
+ * import { difference} from '@mudbean/utils';
  *
  * const log = console.log;
  *

@@ -17,7 +17,7 @@ export interface CreateConstructor<T, Args extends unknown[] = unknown[]> {
  * @returns 返回传入的构造函数
  * @example
  * ```ts
- * import { createConstructor } from "a-js-tools";
+ * import { createConstructor } from "@mudbean/utils";
  *
  * type Tom = {
  *   a: number
@@ -52,7 +52,11 @@ export function createConstructor<T, Args extends unknown[] = unknown[]>(
   return constructor as unknown as CreateConstructor<T, Args>;
 }
 
-/** 对象的 assign 用法 */
+/**
+ * # 对象的 assign 用法
+ * @param target
+ * @param bar
+ */
 export function ObjectAssign(
   target: Record<string, unknown>,
   bar: Record<string, unknown>,

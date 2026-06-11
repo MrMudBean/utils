@@ -1,10 +1,10 @@
-import { isString, isUndefined } from 'a-type-of-js';
+import { isString, isUndefined } from '@mudbean/is';
 import { escapeRegExp } from './escapeRegExp';
 import { autoEscapedRegExpOptions } from './types';
 import { parse } from './parse';
 
 /**
- * ## 适用于简单的文本字符串自动转化为简单模式正则表达式
+ * # 适用于简单的文本字符串自动转化为简单模式正则表达式
  *
  * *若字符串包含且需保留字符类、组、反向引用、量词等时，该方法可能不适用*
  *
@@ -13,7 +13,7 @@ import { parse } from './parse';
  * @returns 正则表达式
  * @example
  * ```ts
- * import { autoEscapedRegExp } from 'a-regexp';
+ * import { autoEscapedRegExp } from '@mudbean/utils';
  *
  * autoEscapedRegExp('abc'); // => /abc/
  * autoEscapedRegExp('abc', 'gim'); // => /abc/gim

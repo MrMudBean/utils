@@ -1,15 +1,15 @@
-import { isArray, isEmptyArray } from 'a-type-of-js';
+import { isArray, isEmptyArray } from '@mudbean/is';
 import { difference } from './difference';
 
 /**
- * ## 对称差集 （ A △ B）
+ * # 对称差集 （ A △ B）
  *
  * @param a  - 数组 a
  * @param b  - 数组 b
  * @returns - 返回一个全新的数组
  * @example
  * ```ts
- * import { symmetricDifference } from 'a-js-tools';
+ * import { symmetricDifference } from '@mudbean/utils';
  *
  * const log = console.log;
  *

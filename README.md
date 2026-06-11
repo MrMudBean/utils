@@ -1,12 +1,20 @@
-# 一点点 🤏 js 函数
+# @mudbean/utils
 
-[![version](<https://img.shields.io/npm/v/a-js-tools.svg?logo=npm&logoColor=rgb(0,0,0)&label=版本号&labelColor=rgb(73,73,228)&color=rgb(0,0,0)>)](https://www.npmjs.com/package/a-js-tools) [![issues 提交](<https://img.shields.io/badge/issues-提交-rgb(255,0,63)?logo=github>)](https://github.com/MrMudBean/a-js-tools/issues)
+[![version](<https://img.shields.io/npm/v/@mudbean/utils.svg?logo=npm&logoColor=rgb(0,0,0)&label=版本号&labelColor=rgb(73,73,228)&color=rgb(0,0,0)>)](https://www.npmjs.com/package/@mudbean/utils) [![issues 提交](<https://img.shields.io/badge/issues-提交-rgb(255,0,63)?logo=github>)](https://github.com/MrMudBean/utils/issues)
 一个纯函数的工具
+
+mudbean
 
 ## 安装
 
 ```sh
-npm install --save a-js-tools
+npm install --save @mudbean/utils
+
+# pnpm
+pnpm add --save @mudbean/utils
+
+# yarn
+yarn add @mudbean/utils
 ```
 
 ## 纯函数
@@ -35,3 +43,9 @@ npm install --save a-js-tools
 - `difference` 方法，计算两个数组的差集（以第一个数组为基准）
 - `symmetricDifference` 方法，计算两个数组的对称差集（在两个数组都不共有的元素）
 - `enArr` 对象，包含上面的方法
+
+## 状态
+
+此软件包是 `@mudbean` 生态系统的一部分。
+它使用严格的 TypeScript 编写，并通过 Rollup 构建进行验证。
+虽然单元测试较少，但 API 稳定，并在生产环境中大量使用。

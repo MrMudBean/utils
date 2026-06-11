@@ -1,8 +1,9 @@
-import { isNull, isString } from 'a-type-of-js';
-import { autoEscapedRegExpOptions } from './types';
+import { isNull, isString } from '@mudbean/is';
+import type { autoEscapedRegExpOptions } from './types';
 
 /**
- * 解析 options
+ * # 解析 options
+ * @param options
  */
 export function parse(
   options: string | autoEscapedRegExpOptions,

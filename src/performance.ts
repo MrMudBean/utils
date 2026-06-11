@@ -1,11 +1,8 @@
 /**
  * 防抖和节流
  */
-import { isUndefined, isNull } from 'a-type-of-js';
-import { isFunction } from 'a-type-of-js';
-import { isNumber } from 'a-type-of-js';
+import { isFunction, isNumber, isUndefined, isNull } from '@mudbean/is';
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 type Callback = (...args: any[]) => void;
 
 /**
@@ -25,7 +22,7 @@ export type debounce_throttle_options =
   | number;
 
 /**
- * 防抖
+ * # 防抖
  *
  * @param   callback 回调函数
  * @param   options    延迟时间（毫秒），默认 200 (ms) 或包含 this 的配置
@@ -33,11 +30,18 @@ export type debounce_throttle_options =
  * @example
  *
  * ```ts
+ * import { debounce } from '@mudbean/utils';
+ *
  * const debounce = (callback: Function, delay = 300) => {
  *   let timer: any = null
  *
  *   return (...args: any[]) => clearTimeout(timer)
  * }
+ *
+ * debounce(); // 未执行
+ * debounce(); // 未执行
+ * debounce(); // 未执行
+ * debounce(); // 执行
  * ```
  */
 export function debounce<F extends Callback>(
@@ -89,11 +93,26 @@ export function debounce<F extends Callback>(
 }
 
 /**
- * 节流
+ * # 节流
  *
  * @param callback   回调函数
  * @param options      延迟时间（毫秒），默认 200 (ms) 或设置 this
  * @returns   返回的闭包函数
+ * @example
+ *
+ * ```ts
+ * import { throttle , sleep } form "@mudbean/utils";
+ *
+ * const a_throttle_fn = throttle(()=> {
+ *    console.log("hello");
+ * }, 1200);
+ *
+ * a_throttle_fn(); // 正常打印
+ * a_throttle_fn(); // 跳过打印
+ * await sleep(1200);   // 等待 1200ms
+ * a_throttle_fn(); // 正常打印
+ * a_throttle_fn(); // 跳过打印
+ * ```
  */
 export function throttle<F extends Callback>(
   callback: F,

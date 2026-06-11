@@ -1,18 +1,15 @@
-import { isArray, isEmptyArray } from 'a-type-of-js';
+import { isArray, isEmptyArray } from '@mudbean/is';
 
 /**
- *
- * 数组的并集
+ * # 数组的并集
  *
  *  <span style="color:#f36;">请注意，参数有不为数组时直接抛出 TypeError</span>
  * @param arrays  - 多个数组
  * @returns 联合后的数组
- *
- *
  * @example
  *
  * ```ts
- * import { union } from 'a-js-tools';
+ * import { union } from '@mudbean/is';
  *
  * const log = console.log;
  *

@@ -1,2 +1,6 @@
+allowBuilds:
+  unrs-resolver: true
 ignoredBuiltDependencies:
   - unrs-resolver
+minimumReleaseAgeExclude:
+  - '@mudbean/is@2.0.2'

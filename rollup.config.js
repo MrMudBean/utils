@@ -24,12 +24,12 @@ function createConfig({ format, dir = undefined, transform = false }) {
     output: Object.fromEntries(
       [
         ['format', format], // 打包模式
-        ['dir', dir ?? `dist/`], // 打包的目录
+        ['dir', dir ?? `dist/${format}/`], // 打包的目录
         ['preserveModules', true], // 是否保留源码目录结构
         ['preserveModulesRoot', 'src'], // 是否保持 src 目录结构（当前模式下貌似没有作用）
         ['sourcemap', false], // 打包关闭 source map
         ['exports', 'named'], // 导出模式
-        ['entryFileNames', `[name].${format}.js`], // 打包文件名
+        ['entryFileNames', `[name].js`], // 打包文件名
         format === formatUmd && ['name', 'aJsTools'], // 在 umd 模式下设定全局变量名
       ].filter(Boolean),
     ),
@@ -44,6 +44,7 @@ function createConfig({ format, dir = undefined, transform = false }) {
         targets: [
           { src: 'README.md', dest: 'dist' },
           { src: 'LICENSE', dest: 'dist' },
+          { src: 'CHANGELOG.md', dest: 'dist' },
         ],
       }),
     ].filter(Boolean),
