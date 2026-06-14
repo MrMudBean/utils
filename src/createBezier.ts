@@ -5,7 +5,7 @@
  * @copyright 2026 ©️ Mr.MudBean
  * @since 2026-03-26 11:24
  * @version 2.0.2
- * @lastModified 2026-06-11 19:07
+ * @lastModified 2026-06-12 20:56
  *
  * ## [贝尔赛曲线](https://developer.mozilla.org/zh-CN/docs/Web/CSS/Reference/Values/easing-function#%E4%B8%89%E6%AC%A1%E8%B4%9D%E5%A1%9E%E5%B0%94%E7%BC%93%E5%8A%A8%E5%87%BD%E6%95%B0)
  *

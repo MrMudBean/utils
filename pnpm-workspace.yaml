@@ -4,3 +4,5 @@ ignoredBuiltDependencies:
   - unrs-resolver
 minimumReleaseAgeExclude:
   - '@mudbean/is@2.0.2'
+  - '@mudbean/is@2.0.4'
+  - '@mudbean/is@2.0.5'

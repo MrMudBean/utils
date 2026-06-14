@@ -21,6 +21,7 @@ export default {
     include: [
       'eg/index.ts',
       '@qqi/dev',
+      'a-type-of-js',
       'a-js-tools',
       'color-pen',
       '@qqi/log',
