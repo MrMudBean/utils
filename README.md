@@ -1,20 +1,18 @@
-# @mudbean/utils
+# @vvi/utils
 
-[![version](<https://img.shields.io/npm/v/@mudbean/utils.svg?logo=npm&logoColor=rgb(0,0,0)&label=版本号&labelColor=rgb(73,73,228)&color=rgb(0,0,0)>)](https://www.npmjs.com/package/@mudbean/utils) [![issues 提交](<https://img.shields.io/badge/issues-提交-rgb(255,0,63)?logo=github>)](https://github.com/MrMudBean/utils/issues)
+[![version](<https://img.shields.io/npm/v/@vvi/utils.svg?logo=npm&logoColor=rgb(0,0,0)&label=版本号&labelColor=rgb(73,73,228)&color=rgb(0,0,0)>)](https://www.npmjs.com/package/@vvi/utils) [![issues 提交](<https://img.shields.io/badge/issues-提交-rgb(255,0,63)?logo=github>)](https://github.com/MrMudBean/utils/issues)
 一个纯函数的工具
-
-mudbean
 
 ## 安装
 
 ```sh
-npm install --save @mudbean/utils
+npm install --save @vvi/utils
 
 # pnpm
-pnpm add --save @mudbean/utils
+pnpm add --save @vvi/utils
 
 # yarn
-yarn add @mudbean/utils
+yarn add @vvi/utils
 ```
 
 ## 纯函数
@@ -46,6 +44,6 @@ yarn add @mudbean/utils
 
 ## 状态
 
-此软件包是 `@mudbean` 生态系统的一部分。
+此软件包是 `MrMudBean` 生态系统的一部分。
 它使用严格的 TypeScript 编写，并通过 Rollup 构建进行验证。
 虽然单元测试较少，但 API 稳定，并在生产环境中大量使用。

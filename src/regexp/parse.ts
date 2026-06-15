@@ -1,4 +1,4 @@
-import { isNull, isString } from '@mudbean/is';
+import { isNull, isString } from '@vvi/is';
 import type { autoEscapedRegExpOptions } from './types';
 
 /**

@@ -1,7 +1,7 @@
-import { isString, isUndefined } from '@mudbean/is';
 import { escapeRegExp } from './escapeRegExp';
 import { autoEscapedRegExpOptions } from './types';
 import { parse } from './parse';
+import { isString, isUndefined } from '@vvi/is';
 
 /**
  * # 适用于简单的文本字符串自动转化为简单模式正则表达式
@@ -13,7 +13,7 @@ import { parse } from './parse';
  * @returns 正则表达式
  * @example
  * ```ts
- * import { autoEscapedRegExp } from '@mudbean/utils';
+ * import { autoEscapedRegExp } from '@vvi/utils';
  *
  * autoEscapedRegExp('abc'); // => /abc/
  * autoEscapedRegExp('abc', 'gim'); // => /abc/gim

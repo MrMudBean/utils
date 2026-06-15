@@ -108,7 +108,7 @@ packageJson = {
     },
     ...exportsList,
   },
-  keywords: ['js utils', 'js 工具', 'mudbean'],
+  keywords: ['js utils', 'js 工具', 'mudbean', 'vvi'],
   homepage: 'https://npm.lmssee.cn/utils',
   dependencies,
   bugs: {

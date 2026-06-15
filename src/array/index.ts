@@ -21,7 +21,7 @@ export const enArr = {
    * @example
    *
    * ```ts
-   * import { union } from '@mudbean/utils';
+   * import { union } from '@vvi/utils';
    *
    * const log = console.log;
    *
@@ -58,7 +58,7 @@ export const enArr = {
    * @returns 返回两个数组的交集
    * @example
    * ```ts
-   * import { intersection } from '@mudbean/utils';
+   * import { intersection } from '@vvi/utils';
    *
    * const log = console.log;
    *
@@ -77,7 +77,7 @@ export const enArr = {
    * @returns 返回第一个参数相对第二个参数的差值
    * @example
    * ```ts
-   * import { difference} from '@mudbean/utils';
+   * import { difference} from '@vvi/utils';
    *
    * const log = console.log;
    *
@@ -105,7 +105,7 @@ export const enArr = {
    * @returns - 返回一个全新的数组
    * @example
    * ```ts
-   * import { symmetricDifference } from '@mudbean/utils';
+   * import { symmetricDifference } from '@vvi/utils';
    *
    * const log = console.log;
    *

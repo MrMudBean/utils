@@ -1,7 +1,8 @@
 /**
  * 获取随机数
  */
-import { isNaN, isNumber } from '@mudbean/is';
+
+import { isNumber } from '@vvi/is';
 
 /**
  * # 获取一个随机的整数类型

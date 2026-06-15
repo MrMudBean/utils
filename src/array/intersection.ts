@@ -1,4 +1,4 @@
-import { isArray, isEmptyArray } from '@mudbean/is';
+import { isArray, isEmptyArray } from '@vvi/is';
 
 /**
  * # 两个数组的交集
@@ -8,7 +8,7 @@ import { isArray, isEmptyArray } from '@mudbean/is';
  * @returns 返回两个数组的交集
  * @example
  * ```ts
- * import { intersection } from '@mudbean/utils';
+ * import { intersection } from '@vvi/utils';
  *
  * const log = console.log;
  *

@@ -1,9 +1,10 @@
 /**
  * 获取随机字符串
  */
-import { isNaN, isNumber, isPlainObject, isUndefined } from '@mudbean/is';
+
 import { ObjectAssign } from './object/createConstructor';
 import { getRandomInt } from './getRandomNumber';
+import { isNumber, isPlainObject, isUndefined } from '@vvi/is';
 /**
  * # 随机字符串生成器
  */
@@ -65,7 +66,7 @@ export type RandomStringOptions = {
  * @returns  - 随机字符串
  * @example
  * ```ts
- * import { getRandomString } from '@mudbean/utils';
+ * import { getRandomString } from '@vvi/utils';
  *
  * // 获取简单的随机字符串
  * // 'abcdefg'

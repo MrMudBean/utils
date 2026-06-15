@@ -8,7 +8,7 @@ importers:
 
   .:
     dependencies:
-      '@mudbean/is':
+      '@vvi/is':
         specifier: ^2.0.5
         version: 2.0.5
     devDependencies:
@@ -744,10 +744,6 @@ packages:
   '@jridgewell/trace-mapping@0.3.31':
     resolution: {integrity: sha512-zzNR+SdQSDJzc8joaeP8QQoCQr8NuYx2dIIytl1QeBEZHJ9uW6hebsrYgbz8hJwUQao3TWCMtmfV8Nu1twOLAw==}
 
-  '@mudbean/is@2.0.5':
-    resolution: {integrity: sha512-vY5OVZGAK103y2eGf3NNOHZtk6SGon113YD/5xXr+XnMdNEU6g7Il9w6Rt0P+3BI9T9l6DSuOEmlAuyDE0kekw==}
-    engines: {node: '>=14.0.0'}
-
   '@napi-rs/wasm-runtime@1.1.5':
     resolution: {integrity: sha512-AWPoBRJ9tsnVhor4sjO7rkni+7p+2IAEFj6cx06UgP10jkQHqay/36uRV/bFkgrh18D9vb4cr8Q0Pthskgzy+Q==}
     peerDependencies:
@@ -1207,6 +1203,10 @@ packages:
     resolution: {integrity: sha512-nAB74NfSNKknqQ1RrYj6uz8FcXEomu/MATJZxh/x+BArzN2U3JbOYC0APYzUIGhVY3m5hRxA8VPNdPBoG8txlA==}
     cpu: [x64]
     os: [win32]
+
+  '@vvi/is@2.0.5':
+    resolution: {integrity: sha512-DHp2dHi/dg3lWG3R10V6xuoffGhZJl9zNkpgqNry5RBW4kcXUtymswqJxbDhHFskllOqG8ommOQNhOLKeHxqkg==}
+    engines: {node: '>=14.0.0'}
 
   a-js-tools@2.0.3:
     resolution: {integrity: sha512-MVsnn360IsTdi4vmqLk7jpObkyOuykBK7zbc6bTlI5E1mwMvsic8bQaP4838filIW3F7oPArMtJdJeDSwmURHw==}
@@ -3270,8 +3270,6 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.5.5
 
-  '@mudbean/is@2.0.5': {}
-
   '@napi-rs/wasm-runtime@1.1.5(@emnapi/core@1.10.0)(@emnapi/runtime@1.10.0)':
     dependencies:
       '@emnapi/core': 1.10.0
@@ -3648,6 +3646,8 @@ snapshots:
 
   '@unrs/resolver-binding-win32-x64-msvc@1.12.2':
     optional: true
+
+  '@vvi/is@2.0.5': {}
 
   a-js-tools@2.0.3:
     dependencies:

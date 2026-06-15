@@ -17,7 +17,7 @@ export interface CreateConstructor<T, Args extends unknown[] = unknown[]> {
  * @returns 返回传入的构造函数
  * @example
  * ```ts
- * import { createConstructor } from "@mudbean/utils";
+ * import { createConstructor } from "@vvi/utils";
  *
  * type Tom = {
  *   a: number

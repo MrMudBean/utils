@@ -5,7 +5,7 @@
  * @requires escapeRegExp 转化后字符串
  * @example
  * ```ts
- * import { escapeRegExp  } from '@mudbean/utils';
+ * import { escapeRegExp  } from '@vvi/utils';
  *
  * escapeRegExp('a.b.c'); // 'a\\.b\\.c'
  * escapeRegExp('a\\.b\\.c'); // 'a\\\\.b\\\\.c'

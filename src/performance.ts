@@ -1,7 +1,8 @@
 /**
  * 防抖和节流
  */
-import { isFunction, isNumber, isUndefined, isNull } from '@mudbean/is';
+
+import { isFunction, isNull, isNumber, isUndefined } from '@vvi/is';
 
 type Callback = (...args: any[]) => void;
 
@@ -30,7 +31,7 @@ export type debounce_throttle_options =
  * @example
  *
  * ```ts
- * import { debounce } from '@mudbean/utils';
+ * import { debounce } from '@vvi/utils';
  *
  * const debounce = (callback: Function, delay = 300) => {
  *   let timer: any = null
@@ -101,7 +102,7 @@ export function debounce<F extends Callback>(
  * @example
  *
  * ```ts
- * import { throttle , sleep } form "@mudbean/utils";
+ * import { throttle , sleep } form "@vvi/utils";
  *
  * const a_throttle_fn = throttle(()=> {
  *    console.log("hello");

@@ -1,4 +1,4 @@
-import { isArray, isEmptyArray } from '@mudbean/is';
+import { isArray, isEmptyArray } from '@vvi/is';
 
 /**
  * # 数组的并集
@@ -9,7 +9,7 @@ import { isArray, isEmptyArray } from '@mudbean/is';
  * @example
  *
  * ```ts
- * import { union } from '@mudbean/is';
+ * import { union } from '@vvi/is';
  *
  * const log = console.log;
  *

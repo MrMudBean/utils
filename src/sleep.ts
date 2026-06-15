@@ -1,4 +1,4 @@
-import { isZero } from '@mudbean/is';
+import { isZero } from '@vvi/is';
 
 /**
  * # 线程休息
@@ -17,7 +17,7 @@ import { isZero } from '@mudbean/is';
  * @example
  *
  * ```ts
- * import { sleep } from '@mudbean/utils';
+ * import { sleep } from '@vvi/utils';
  *
  * console.log(Date.now()); // 1748058118471
  * await sleep(1000);

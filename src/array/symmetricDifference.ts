@@ -1,4 +1,4 @@
-import { isArray, isEmptyArray } from '@mudbean/is';
+import { isArray, isEmptyArray } from '@vvi/is';
 import { difference } from './difference';
 
 /**
@@ -9,7 +9,7 @@ import { difference } from './difference';
  * @returns - 返回一个全新的数组
  * @example
  * ```ts
- * import { symmetricDifference } from '@mudbean/utils';
+ * import { symmetricDifference } from '@vvi/utils';
  *
  * const log = console.log;
  *

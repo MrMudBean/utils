@@ -1,7 +1,7 @@
-import { isArray, isEmptyArray } from '@mudbean/is';
+import { isArray, isEmptyArray } from '@vvi/is';
 
 /**
- *  ## 求给出的两个数组的差值（A - B）
+ * # 求给出的两个数组的差值（A - B）
  *
  * @param a  - 第一个数组
  * @param b - 第二个数组
@@ -10,7 +10,7 @@ import { isArray, isEmptyArray } from '@mudbean/is';
  * @returns 返回第一个参数相对第二个参数的差值
  * @example
  * ```ts
- * import { difference} from '@mudbean/utils';
+ * import { difference} from '@vvi/utils';
  *
  * const log = console.log;
  *

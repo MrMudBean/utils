@@ -42,9 +42,7 @@ function createConfig({ format, dir = undefined, transform = false }) {
       transform && cleanup(),
       copy({
         targets: [
-          { src: 'README.md', dest: 'dist' },
-          { src: 'LICENSE', dest: 'dist' },
-          { src: 'CHANGELOG.md', dest: 'dist' },
+          { src: ['README.md', 'LICENSE', 'CHANGELOG.md'], dest: 'dist' },
         ],
       }),
     ].filter(Boolean),

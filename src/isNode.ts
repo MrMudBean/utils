@@ -1,4 +1,4 @@
-import { isUndefined } from '@mudbean/is';
+import { isUndefined } from '@vvi/is';
 
 /**
  * # 判断当前环境是否为 node 环境
