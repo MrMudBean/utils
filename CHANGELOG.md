@@ -1,5 +1,12 @@
 # 更新日志
 
+`typescript` version7 以上将导致 `@rollup/plugin-typescript` 插件报错 `[!] TypeError: Cannot read properties of undefined (reading 'ES2015')` ！！！
+
+## 2.0.7 (2026-7-15)
+
+- 移除打包后的 "package.json" 文件的 "type" 属性的，该属性添加影响 cjs 的引用方式
+- 移除多余的 "module" 属性
+
 ## 2.0.6 (2026-6-14)
 
 - 维护导出信息

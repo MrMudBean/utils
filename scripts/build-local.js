@@ -4,9 +4,9 @@ import {
   pathJoin,
   readFileToJsonSync,
   runOtherCode,
-} from 'a-node-tools';
-import { copyTextToClipboard } from '@qqi/copy-text';
-import { brightBlackPen, cyanPen, randomPen } from 'color-pen';
+} from '@vvi/node';
+import { copyTextToClipboard } from '@vvi/copy-text';
+import { brightBlackPen, cyanPen, randomPen } from '@vvi/pen';
 
 /**  本地打包并将本地地址复制到剪切板 */
 

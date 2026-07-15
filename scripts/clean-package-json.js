@@ -4,7 +4,7 @@ import {
   readFileToJsonSync,
   writeJsonFileSync,
   fileExist,
-} from 'a-node-tools';
+} from '@vvi/node';
 import { readdirSync } from 'node:fs';
 import { basename, extname } from 'node:path';
 
@@ -18,6 +18,8 @@ let dependencies = packageJson.dependencies;
   'packageManager',
   'private',
   'dependencies',
+  'type',
+  'jja',
 ].forEach(key => delete packageJson[key]);
 const esPrefix = 'es'; // es 前缀
 const cjsPrefix = 'cjs'; // cjs 前缀
@@ -84,7 +86,7 @@ packageJson = {
   // unpkg: '', // 如果希望通过 CDN 使用，可以添加 unpkg 字段指向 UMD 构建版本
   // funding: '', // 如果有人赞助，可以添加
   main: cjsPrefix + '/index.js', // 旧版本 CommonJs 入口
-  module: esPrefix + '/index.js', // 旧版本 ESM 入口
+  // module: esPrefix + '/index.js', // 旧版本 ESM 入口
   types: dtsPrefix + '/index.d.ts', // 旧版本类型入口
   author: {
     name: '泥豆君',
