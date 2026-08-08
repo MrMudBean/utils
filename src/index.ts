@@ -19,3 +19,5 @@ export {
 } from './array';
 export { sleep } from './sleep';
 export { createBezier } from './createBezier';
+
+export { tryJSONParse, tryJSONStringify } from './json';
